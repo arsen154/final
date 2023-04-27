@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="events.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+    </style>
+    <title>Events</title>
+</head>
+<body>
+    <nav>
+        <a href="#"><div class="logo">Soft Skills</div></a>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li>
+              <label for="btn-1" class="show">Home</label>
+                <a href="../main/index.html">Home</a>
+                <input type="checkbox" id="btn-1">
+            </li>
+            <li>
+                <label for="btn-2" class="show">About Us</label>
+                <a href="../about/about.html">About Us</a>
+                <input type="checkbox" id="btn-2">
+            </li>
+            <li>
+                <label for="btn-3" class="show">Courses</label>
+                <a href="../coursesnew/coursesnew.html">Courses</a>
+                <input type="checkbox" id="btn-2">
+            </li>
+            <li>
+                <label for="btn-4" class="show">Events</label>
+                <a href="#">Events</a>
+                <input type="checkbox" id="btn-3">
+            </li>
+            <li><a href="../contact/contact.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="signbar">
+            <li class="search"><a href="#"><input type="search"></a></li>
+            <li class="log"><a href="../signup/signup.html" style="background: #681DFE; padding: 10px; border-radius: 10px;">Start</a></li>
+            <li class="d-m"><i class="fa-solid fa-sun" id="sun"></i></li>
+        </ul>
+    </nav>
+
+
+    <script>
+        const navToggle = document.querySelector(".nav-toggle"); 
+        const links = document.querySelector(".links"); 
+ 
+        navToggle.addEventListener("click", function () { 
+ 
+        links.classList.toggle("show-links"); 
+        });
+    </script>
+    <script>
+        var icon = document.getElementById("icon");
+        var text = document.querySelectorAll("h1");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+         if(document.body.classList.contains("dark-theme")){
+            icon.src = "moon.png";
+            for(let i = 0; i < text.length; i++){
+                text[i].style.color="black";
+            }
+         }else{
+            icon.src = "sun.png";
+            text[i].style.color="white";
+         }
+        }
+    </script>
+
+
+
+
+
+    <main>
+        <div class="container">
+            <div class="container-content">
+                <h1>Events</h1>   
+            </div>
+        </div>
+
+
+
+        <div class="our-teacher">
+            <h1>We connect founders from around</h1>
+        </div>
+        <div class="all-of-person">
+            <div class="person-back">
+                <div class="person-card">
+                    <img class="person-img" src="person1.jpg" alt="">
+                    <div class="person-content">
+                        <h3>Jim Walker</h3>
+                        <p>Web design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="person-back">
+                <div class="person-card">
+                    <img class="person-img" src="person1.jpg" alt="">
+                    <div class="person-content">
+                        <h3>Jim Walker</h3>
+                        <p>Web design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="person-back">
+                <div class="person-card">
+                    <img class="person-img" src="person1.jpg" alt="">
+                    <div class="person-content">
+                        <h3>Jim Walker</h3>
+                        <p>Web design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="person-back">
+                <div class="person-card">
+                    <img class="person-img" src="person1.jpg" alt="">
+                    <div class="person-content">
+                        <h3>Jim Walker</h3>
+                        <p>Web design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="conference">
+            <h1>You during the conference</h1>
+        </div>
+        <div class="containers">
+            <div class="card">
+                <div class="ImgBx">
+                    <img src="robot.jpg" alt="">
+                </div>
+                <div class="contentImgBx">
+                    <h2>Nike Shoes</h2>
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                    </div>
+                    <a href="#">Buy now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="ImgBx">
+                    <img src="robot.jpg" alt="">
+                </div>
+                <div class="contentImgBx">
+                    <h2>Nike Shoes</h2>
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                    </div>
+                    <a href="#">Buy now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="ImgBx">
+                    <img src="robot.jpg" alt="">
+                </div>
+                <div class="contentImgBx">
+                    <h2>Nike Shoes</h2>
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                    </div>
+                    <a href="#">Buy now</a>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+        <div class="tour">
+                <h1>Main</h1>
+        </div>
+        <div class="row"> 
+                <div class="row-back">
+                    <div class="row-card">
+                        <img class="row-img" src="Pakistani-Youth-to-participate-in-global-IT-competition.jpg" alt="">
+                        <div class="row-content">
+                                <h1 class="text-header">IT competition</h1>
+                                <p class="text_footer">Lorem ipsum dolor sit amet.</p>
+                                <a class="text-button" href="#">Participate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-back">
+                    <div class="row-card">
+                        <img class="row-img" src="robot.jpg" alt="">
+                        <div class="row-content">
+                                <h1 class="text-header">Fight robot show</h1>
+                                <p class="text_footer">Lorem ipsum dolor sit amet.</p>
+                                <a class="text-button" href="#">Participate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-back">
+                    <div class="row-card">
+                        <img class="row-img" src="elon.jpeg" alt="">
+                        <div class="row-content">
+                                <h1 class="text-header">Elon Musk in Taraz</h1>
+                                <p class="text_footer">Lorem ipsum dolor sit amet.</p>
+                                <a class="text-button" href="#">Participate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-back">
+                    <div class="row-card">
+                        <img class="row-img" src="Infomatrix-2017-ISB-1522-1024x682.jpg" alt="">
+                        <div class="row-content">
+                                <h1 class="text-header">Infomatrix 2023</h1>
+                                <p class="text_footer">Lorem ipsum dolor sit amet.</p>
+                                <a class="text-button" href="#">Participate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-back">
+                    <div class="row-card">
+                        <img class="row-img" src="open-uri20200518-21855-15nqve2.jpg" alt="">
+                        <div class="row-content">
+                                <h1 class="text-header">Design competition around a world</h1>
+                                <p class="text_footer">Lorem ipsum dolor sit amet.</p>
+                                <a class="text-button" href="#">Participate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-back">
+                    <div class="row-card">
+                        <img class="row-img" src="How-to-Prepare-for-Competitive-Programming.png" alt="">
+                        <div class="row-content">
+                                <h1 class="text-header">Programming competition</h1>
+                                <p class="text_footer">Lorem ipsum dolor sit amet.</p>
+                                <a class="text-button" href="#">Participate</a>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+        <hr style="margin-top: 10vh; margin-left: 20vh; margin-right: 20vh;">
+        
+        
+
+        <div class="study">
+            <h1>Provided perks for you during the conference</h1>
+            <p>In the process of learning on the platform, user consolidate their knowledge with the help of tests and practical assigments, which are checked by the curator. It is the practical work that will become the basis of your portfolio</p>
+            <div>
+                <div class="all-of-study">
+                    <div class="study-back">
+                        <div class="study-card">
+                            <img class="study-img" src="moon.png" alt="">
+                            <div class="study-content">
+                                <p class="study-tagline">Your private office</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-back">
+                        <div class="study-card">
+                            <img class="study-img" src="moon.png" alt="">
+                            <div class="study-content">
+                                <p class="study-tagline">Monitor your learning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-back">
+                        <div class="study-card">
+                            <img class="study-img" src="moon.png" alt="">
+                            <div class="study-content">
+                                <p class="study-tagline">Earn bonuses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-back">
+                        <div class="study-card">
+                            <img class="study-img" src="moon.png" alt="">
+                            <div class="study-content">
+                                <p class="study-tagline">Get a result</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer-back">
+            <div class="footer-card">
+                <h3>Soft Skills</h3>
+                <div class="footer-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore   cumque? Cupiditate minima veritatis provident!</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-back">
+            <div class="footer-card">
+                <h3>Quick links</h3>
+                <div class="footer-content">
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Courses</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-back">
+            <div class="footer-card">
+                <h3>Contact Us</h3>
+                <div class="footer-content">
+                    <a href="#"><i class="fa-solid fa-envelope"></i>gbgbgbgbgbgbg@gmail.com</a>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i>Taraz, st. Pushkin 154</a>
+                    <a href="#"><i class="fa-solid fa-user"></i>+7(777)9442005</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="icons-footer">
+        <hr>
+        <div class="color-footer">
+            <a style="color: #000;" href=""><i class="fa-brands fa-github"></i></a>
+            <a style="color: blue;" href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a style="color: rgb(0, 113, 194);" href=""><i class="fa-solid fa-paper-plane"></i></a>
+            <a style="color: purple;" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a style="color: limegreen;" href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+
+</body>
+</html>
