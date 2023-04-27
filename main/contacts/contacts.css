@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+    font-weight: 700;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: #190A55;
+    background-image: url(main-photo.png);
+    background-size: 800px;
+    margin-bottom: 20vh;
+    margin-right: 20vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+} 
+
+header{
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 6%;
+}
+header h3{
+    font-size: 20px;
+    margin: 5px 10px;
+    color: #fa05ff;
+    justify-content: center;
+}
+header .header a{
+    font-size: 17px;
+    font-weight: 100;
+    color: #fff;
+    margin: 10px 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-align: center;
+    justify-content: space-around;
+}
+header .header a:hover{
+    transition:all 0.5s ease;
+    background-color: #fa05ff;
+    box-shadow:  0 0 10px #fa05ff,  0 0 50px #d5256b, 0 0 100px #d5256b;
+    padding: 10px;
+}
+header .sign a{
+    margin: 5px 10px;
+    font-size: 17px;
+    color: white;
+}
+.enter{
+    border:  3px solid #fff;
+    padding: 7px 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.enter:hover{
+    border: 3px solid #fa05ff;
+    background-color: #fa05ff;
+    color: #fff;
+    box-shadow:  0 0 10px #fa05ff,  0 0 50px #fa05ff;
+    transition: all 0.5s ease;
+}
+.start{
+    background-color: #fa05ff;
+    border:  3px solid #fa05ff;
+    padding: 7px 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.start:hover{
+    transition: all 0.5s ease;
+    background-color: white;
+    border: 3px solid white;
+    box-shadow:  0 0 10px white,  0 0 50px white;
+    color: #d5256b;
+}
+
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2rem, 1fr);
+    gap: 1rem;
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    align-items: center;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 400px;
+}
+.form-container{
+    padding: 0px;
+}
+.form-container a{
+    font-size: 1.5rem;
+    /* text-align: center; */
+    align-items: center;
+    font-weight: 400;
+    margin: 25px;
+    padding: 10px;
+    margin-left: 8vh;
+    border-radius: 10px;
+}
+.login{
+    color: #fff;
+    background: #a305ff;
+}
+.contact-form{
+    display: grid;
+    row-gap: 2rem;
+}
+.contact-form input{
+    margin: 5px 20px;
+    padding: 10px;
+    background-color: #F1E7E7;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px #000;
+}
+.contact-form textarea{
+    border: none;
+    background-color: #F1E7E7;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+    resize: 1rem;
+    box-shadow: 0 2px 8px #000;
+}
+.contact-form .send-message{
+    background-color: #001a35;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.pak{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.footer{
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    align-items: start;
+    margin-top: 15vh;
+    padding:0 70px;
+}
+.footer-back{
+    position: relative;
+    overflow: hidden;
+}
+.footer-card h3{
+    color: #fa05ff;
+    font-size: 20px;
+}
+.footer-content{
+    padding: 2rem 0;
+    line-height: 1.2;
+}
+.footer-content p{
+    color: #7f7f7f;
+    letter-spacing: 1px;
+}
+.footer-content a{
+    display: flex;
+    line-height: 2.5;
+    color: #fff;
+    font-size: 15px;
+}
+.footer-content i{
+    margin-top: 13px;
+    padding: 0 10px;
+}
+.icons-footer{
+    text-align: center;
+    margin: 10px;
+    
+}
+.color-footer{
+    margin-top: 10px;
+    text-align: center;
+}
+.color-footer i{
+    margin: 15px;
+    background: #fff;
+    padding: 10px 12px 10px 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    
+    transition: 0.5s;
+}
+.color-footer i:hover{
+    transition: 0.5s;
+    color: #fa05ff;
+    transform: scale(1.2);
+    background: #000;
+}
